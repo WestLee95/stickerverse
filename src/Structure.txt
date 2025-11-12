@@ -1,0 +1,16 @@
+src/
+├── App.jsx
+├── App.css
+├── main.jsx
+├── components/
+│   ├── Hero.jsx
+│   ├── About.jsx
+│   ├── Collections.jsx
+│   ├── CustomOrder.jsx
+│   ├── HowToOrder.jsx
+│   ├── Gallery.jsx
+│   ├── Contact.jsx
+│   ├── Footer.jsx
+└── assets/
+    ├── stickers/...
+    └── icons/...

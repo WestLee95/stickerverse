@@ -1,0 +1,341 @@
+@import "tailwindcss";
+
+/* ===========================
+   GLOBAL STYLES
+=========================== */
+
+@theme {
+    --color-azure: #007FFF;
+    --color-banana: #FFE135;
+    --color-crimson: #DC143C;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+section {
+  width: 100%;
+  position: relative;
+}
+
+h1, h2 {
+  font-family: 'Space Mono', monospace;
+  letter-spacing: 2px;
+}
+
+/* Center content utility */
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+
+/* --------------------------------------
+   HERO TITLE STYLING
+-------------------------------------- */
+.hero-title {
+  @apply text-5xl md:text-6xl lg:text-7xl font-extrabold text-yellow-400 leading-tight tracking-tight drop-shadow-[0_4px_8px_rgba(0,0,0,0.4)] mb-4;
+
+  /* Smooth entrance feel before GSAP takes over */
+  opacity: 1;
+  transform: translateY(40px);
+}
+
+/* Optional glow shimmer for fancy reveal */
+.hero-title::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  height: 3px;
+  background: linear-gradient(90deg, #fde047 0%, #facc15 50%, #fef08a 100%);
+  border-radius: 9999px;
+  box-shadow: 0 0 20px rgba(250, 204, 21, 0.7);
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+
+/* On hover or GSAP-triggered animation */
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+
+
+
+.hero nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.hero nav a:hover {
+  color: #facc15;
+}
+
+.hero h1 {
+  z-index: 10;
+  font-size: clamp(3rem, 7vw, 6rem);
+  margin-top: 2rem;
+}
+
+
+
+
+/* ===========================
+   ABOUT SECTION
+=========================== */
+.about {
+  padding: 6rem 1.5rem;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: #facc15;
+  margin-bottom: 1.5rem;
+}
+
+.about p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #d1d5db;
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+/* ===========================
+   COLLECTIONS SECTION
+=========================== */
+.collections {
+  background: #111827;
+  padding: 6rem 1.5rem;
+  text-align: center;
+}
+
+.collections h2 {
+  color: #facc15;
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 2.5rem;
+}
+
+.collections .planets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.collections .planet {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background: white;
+  color: black;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.collections .planet:hover {
+  transform: scale(1.1);
+}
+
+/* ===========================
+   CUSTOM ORDER SECTION
+=========================== */
+.custom-order {
+  padding: 6rem 1.5rem;
+  text-align: center;
+}
+
+.custom-order h2 {
+  color: #facc15;
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 1.5rem;
+}
+
+.custom-order p {
+  color: #d1d5db;
+  margin-bottom: 2.5rem;
+}
+
+.custom-order form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.custom-order input,
+.custom-order textarea {
+  background: #1f2937;
+  border: none;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+.custom-order button {
+  background: #facc15;
+  color: black;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.custom-order button:hover {
+  background: #fde047;
+  transform: scale(1.05);
+}
+
+/* ===========================
+   HOW TO ORDER SECTION
+=========================== */
+.howto {
+  background: #111827;
+  padding: 6rem 1.5rem;
+  text-align: center;
+}
+
+.howto h2 {
+  color: #facc15;
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 2.5rem;
+}
+
+.howto .steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.howto .step {
+  width: 16rem;
+  background: #000;
+  border: 1px solid #facc15;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.howto .step:hover {
+  transform: scale(1.05);
+}
+
+.howto h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.howto p {
+  color: #d1d5db;
+}
+
+/* ===========================
+   GALLERY SECTION
+=========================== */
+.gallery {
+  padding: 6rem 1.5rem;
+  text-align: center;
+}
+
+.gallery h2 {
+  color: #facc15;
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 2.5rem;
+}
+
+.gallery .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1.5rem;
+}
+
+.gallery .item {
+  background: #1f2937;
+  border-radius: 1rem;
+  height: 12rem;
+  transition: transform 0.3s ease;
+}
+
+.gallery .item:hover {
+  transform: scale(1.05);
+}
+
+/* ===========================
+   CONTACT SECTION
+=========================== */
+.contact {
+  background: #111827;
+  padding: 6rem 1.5rem;
+  text-align: center;
+}
+
+.contact h2 {
+  color: #facc15;
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 1.5rem;
+}
+
+.contact p {
+  color: #d1d5db;
+  margin-bottom: 2rem;
+}
+
+.contact .socials {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.25rem;
+}
+
+.contact .socials a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact .socials a:hover {
+  color: #facc15;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+  background: #000;
+  padding: 1rem;
+  text-align: center;
+  color: #9ca3af;
+  font-size: 0.875rem;
+}
