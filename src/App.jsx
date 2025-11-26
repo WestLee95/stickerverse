@@ -5,8 +5,6 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Collections from "./components/Collections";
 import CustomOrder from "./components/CustomOrder";
-import HowToOrder from "./components/HowToOrder";
-import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -27,8 +25,6 @@ function App() {
       <About />
       <Collections />
       <CustomOrder />
-      <HowToOrder />
-      <Gallery />
       <Contact />
       <Footer />
     </div>
