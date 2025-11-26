@@ -1,7 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Truck, Award, Shield, ShoppingCart, Menu, X, Star } from 'lucide-react';
+import Bible from '../assets/stickers/Bible.jpg';
+import Chosen from '../assets/stickers/Chosen.jpg';
+import Moses from '../assets/stickers/Moses.jpg';
+import Ask from '../assets/stickers/Ask Trust Thank.jpg';
+import Bonfire from '../assets/stickers/bonfire.jpg';
+import Mercedes from '../assets/stickers/Mercedes f1.jpg';
+import Bottle from '../assets/stickers/water bottle.jpg';
+import Cat from '../assets/stickers/cat teaching.jpg';
 
-const Hero = () => {
+const StickerverseHero = () => {
   const [scrollY, setScrollY] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -11,15 +19,16 @@ const Hero = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Replace these placeholder URLs with your actual sticker image URLs
   const stickers = [
-    { size: 'w-40 h-40', top: '10%', left: '10%', speed: 0.1, rotation: '-rotate-12' },
-    { size: 'w-30 h-30', top: '15%', left: '55%', speed: 0.15, rotation: 'rotate-6' },
-    { size: 'w-36 h-36', top: '35%', left: '25%', speed: 0.12, rotation: 'rotate-12' },
-    { size: 'w-32 h-32', top: '40%', left: '65%', speed: 0.18, rotation: '-rotate-6' },
-    { size: 'w-28 h-28', top: '60%', left: '15%', speed: 0.08, rotation: 'rotate-3' },
-    { size: 'w-36 h-36', top: '65%', left: '50%', speed: 0.14, rotation: '-rotate-9' },
-    { size: 'w-25 h-25', top: '80%', left: '35%', speed: 0.11, rotation: 'rotate-15' },
-    { size: 'w-32 h-32', top: '75%', left: '70%', speed: 0.16, rotation: '-rotate-3' },
+    { size: 'w-40 h-40', top: '10%', left: '10%', speed: 0.1, rotation: '-rotate-12', image: Bible },
+    { size: 'w-30 h-30', top: '15%', left: '55%', speed: 0.15, rotation: 'rotate-6', image: Chosen },
+    { size: 'w-36 h-36', top: '35%', left: '25%', speed: 0.12, rotation: 'rotate-12', image: Moses },
+    { size: 'w-32 h-32', top: '40%', left: '65%', speed: 0.18, rotation: '-rotate-6', image: Ask },
+    { size: 'w-28 h-28', top: '60%', left: '15%', speed: 0.08, rotation: 'rotate-3', image: Bonfire },
+    { size: 'w-36 h-36', top: '65%', left: '50%', speed: 0.14, rotation: '-rotate-9', image: Mercedes },
+    { size: 'w-25 h-25', top: '80%', left: '35%', speed: 0.11, rotation: 'rotate-15', image: Bottle },
+    { size: 'w-32 h-32', top: '75%', left: '70%', speed: 0.16, rotation: '-rotate-3', image: Cat },
   ];
 
   return (
@@ -121,7 +130,7 @@ const Hero = () => {
               <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start text-sm text-[#a3a3a3]">
                 <div className="flex items-center gap-2 justify-center lg:justify-start">
                   <Truck size={16} />
-                  <span>Free Shipping over KES2,000</span>
+                  <span>Free UK Shipping over KES2,000</span>
                 </div>
                 <div className="flex items-center gap-2 justify-center lg:justify-start">
                   <Award size={16} />
@@ -146,8 +155,12 @@ const Hero = () => {
                     transform: `translateY(${scrollY * sticker.speed}px) ${sticker.rotation}`,
                   }}
                 >
-                  <div className="w-full h-full bg-white rounded-full shadow-xl flex items-center justify-center border-4 border-white">
-                    {/* Empty white circle for sticker placement */}
+                  <div className="w-full h-full bg-gray-500 rounded-full shadow-xl flex items-center justify-center border-4 border-gray-500 overflow-hidden">
+                    <img 
+                      src={sticker.image} 
+                      alt={`Sticker ${index + 1}`}
+                      className="w-full h-full object-cover rounded-full"
+                    />
                   </div>
                 </div>
               ))}
@@ -158,8 +171,14 @@ const Hero = () => {
               {stickers.slice(0, 4).map((sticker, index) => (
                 <div
                   key={index}
-                  className="aspect-square bg-white rounded-full shadow-xl border-4 border-white cursor-pointer hover:scale-105 transition-all duration-300"
-                />
+                  className="aspect-square bg-white rounded-full shadow-xl border-4 border-gray-500 cursor-pointer hover:scale-105 transition-all duration-300 overflow-hidden"
+                >
+                  <img 
+                    src={sticker.image} 
+                    alt={`Sticker ${index + 1}`}
+                    className="w-full h-full object-cover rounded-full"
+                  />
+                </div>
               ))}
             </div>
           </div>
@@ -191,4 +210,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default StickerverseHero;
