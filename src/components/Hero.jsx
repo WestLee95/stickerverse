@@ -130,7 +130,7 @@ const StickerverseHero = () => {
               <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start text-sm text-[#a3a3a3]">
                 <div className="flex items-center gap-2 justify-center lg:justify-start">
                   <Truck size={16} />
-                  <span>Free UK Shipping over KES2,000</span>
+                  <span>Free KENYA Shipping over KES2,000</span>
                 </div>
                 <div className="flex items-center gap-2 justify-center lg:justify-start">
                   <Award size={16} />

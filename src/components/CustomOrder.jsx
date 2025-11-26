@@ -81,7 +81,7 @@ export default function CustomOrder() {
             {/* Pricing Teaser */}
             <div className="border border-[#2a2a2a] rounded-lg p-4 bg-[#202020]">
               <p className="text-base text-white font-medium mb-2">
-                Starting from £0.85 per sticker
+                Starting from 80KES per sticker
               </p>
               <button className="text-sm text-[#00D4FF] hover:underline flex items-center gap-1">
                 View full pricing
@@ -180,10 +180,10 @@ export default function CustomOrder() {
                     Estimated Price
                   </p>
                   <p className="text-4xl font-bold text-white mb-2">
-                    £127.50
+                    KES20,000
                   </p>
                   <p className="text-sm text-[#a3a3a3]">
-                    Includes free UK shipping
+                    Includes free Kenya shipping
                   </p>
                   <p className="text-xs text-[#404040] mt-2">
                     Final price confirmed after proof approval
