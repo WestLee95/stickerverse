@@ -98,7 +98,7 @@ export default function Contact() {
                     href="mailto:hello@stickerverse.co.uk"
                     className="text-base text-white font-medium hover:text-[#00D4FF] hover:underline transition-colors duration-300"
                   >
-                    hello@stickerverse.co.uk
+                    hello@stickerverse.co.ke
                   </a>
                 </div>
               </div>
@@ -116,7 +116,7 @@ export default function Contact() {
                     href="tel:+442012345678"
                     className="text-base text-white font-medium hover:text-[#00D4FF] hover:underline transition-colors duration-300"
                   >
-                    +44 20 1234 5678
+                    +254 717 972 081
                   </a>
                   <p className="text-xs text-[#737373] mt-1">
                     Mon-Fri, 9am-6pm GMT
