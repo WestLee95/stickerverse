@@ -23,8 +23,7 @@ Upload your design and receive professional-grade vinyl stickers printed on prem
 - Weather-resistant vinyl that won't fade
 - 100% recyclable materials
 - 30-day money-back guarantee
-- Free UK shipping on custom orders
-- Climate Neutral & FSC Certified
+- Free Kenya shipping on custom orders past 20$
 
 ### Target Audience
 
@@ -40,7 +39,7 @@ Upload your design and receive professional-grade vinyl stickers printed on prem
 - Custom B2B printing services
 - Wholesale partnerships
 - Volume discounts at 500+ units
-- Starting from £0.85 per sticker
+- Starting from KES80 per sticker
 
 ## The Website
 
@@ -48,7 +47,7 @@ Upload your design and receive professional-grade vinyl stickers printed on prem
 
 The homepage opens with a bold, dark-themed hero featuring:
 
-**Headline:** "Stickers That Don't Suck"
+**Headline:** "Stick to what matters"
 
 **Subheadline:** Premium vinyl stickers that actually stick around. Weather-proof, fade-resistant, and built to last 3-5 years outdoors.
 
@@ -89,6 +88,6 @@ Professional yet approachable. We speak to quality-conscious customers who appre
 
 ---
 
-**Contact:** hello@stickerverse.co.uk  
-**Phone:** +44 20 1234 5678  
-**Location:** Made in the UK
+**Contact:** eugenewestley95@gmail.com  
+**Phone:** +254 717 972 081  
+**Location:** Made in Kenya
